@@ -6,7 +6,6 @@ SmartCardProgrammer - Read, Write and Browse Programmable SIM/USIM/ISIM/HPSIM Ca
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Card Programmer for ISO 7816 Standard</title>
 </head>
 <body>
 
