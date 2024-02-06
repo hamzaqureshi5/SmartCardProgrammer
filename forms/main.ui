@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../pysim/resources/stc_png.png</normaloff>../../pysim/resources/stc_png.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color:rgba(32,33,36,255);
+color:white;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <property name="leftMargin">
+           <number>15</number>
+          </property>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox_reader">
+            <property name="maximumSize">
+             <size>
+              <width>1200</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="reader_label">
+               <property name="maximumSize">
+                <size>
+                 <width>74</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Select Reader</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QPushButton" name="reader_refresh">
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#reader_refresh{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#reader_refresh:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../resources/refresh.ico</normaloff>../resources/refresh.ico</iconset>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="reader_comboBox">
+               <property name="minimumSize">
+                <size>
+                 <width>500</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox#reader_comboBox{
+    border:                 none;
+ background-color: rgba(63,64,66,255);
+color:                      white;
+    font-weight:            bold;
+    padding:                    5px;
+
+border:2px solid black;
+}
+QComboBox#reader_comboBox:hover{
+
+background-color:rgba(32,33,36,255);
+
+}
+QListView{
+    border:                 none;
+    color:                     white;
+    background-color: rgba(63,64,66,255);
+    font-weight:            bold;
+    selection-background-color: rgb(0, 144, 196);
+    show-decoration-selected: 1;
+    margin-left:                -10px;
+    padding-left    :           15px;
+}
+QListView::item:hover{
+
+    background-color:   rgb(0, 144, 196);
+    border:                 none;
+}
+
+
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="reader_connection">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#reader_connection{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#reader_connection:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>../resources/connect.ico</normaloff>../resources/connect.ico</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QGroupBox" name="groupBox_files">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1200</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="pre_os_check_box">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="pre_os_path">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#pre_os_path{
+background-color: rgba(63,64,66,255);
+border-radius:5px;
+height:26px;
+border:2px solid black;
+padding-left:5px;
+}
+#pre_os_path:hover{
+border:2px solid black;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="pre_os_browse_button">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#pre_os_browse_button{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#pre_os_browse_button:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string>BL/RESTORE</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="os_sys_check_box">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="op_sys_path">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#op_sys_path{
+background-color: rgba(63,64,66,255);
+border-radius:5px;
+height:26px;
+border:2px solid black;
+padding-left:5px;
+}
+#op_sys_path:hover{
+border:2px solid black;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="op_sys_browse_button">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#op_sys_browse_button{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#op_sys_browse_button:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string>OS</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="pre_perso_check_box">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="pre_perso_path">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#pre_perso_path{
+background-color: rgba(63,64,66,255);
+border-radius:5px;
+height:26px;
+border:2px solid black;
+padding-left:5px;
+}
+#pre_perso_path:hover{
+border:2px solid black;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QPushButton" name="pre_perso_browse_button">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#pre_perso_browse_button{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#pre_perso_browse_button:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string>PRE-PERSO</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="perso_check_box">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="perso_path">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#perso_path{
+background-color: rgba(63,64,66,255);
+border-radius:5px;
+height:26px;
+border:2px solid black;
+padding-left:5px;
+}
+#perso_path:hover{
+border:2px solid black;
+}
+</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QPushButton" name="perso_browse_button">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#perso_browse_button{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#perso_browse_button:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string>PERSO</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QPushButton" name="load_button">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>75</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">#load_button{background-color: rgba(63,64,66,255);
+font: 600 9pt &quot;Segoe UI&quot;;
+height:26px;
+width:80px;
+border-radius:5px;
+border:2px solid black;
+}
+#load_button:hover{
+
+background-color:rgba(32,33,36,255);
+}</string>
+               </property>
+               <property name="text">
+                <string>LOAD</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>600</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTextEdit" name="textEdit">
+            <property name="styleSheet">
+             <string notr="true">QTextEdit{
+background-color: rgba(63,64,66,255);
+font: 550 9pt &quot;Segoe UI&quot;;
+color:White;
+border-radius:10px;
+border:2px solid black;
+}</string>
+            </property>
+            <property name="lineWrapMode">
+             <enum>QTextEdit::NoWrap</enum>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="Contact_Reader_0">
+   <property name="text">
+    <string>JAVACOS Virtual Contact Reader 0</string>
+   </property>
+  </action>
+  <action name="Contactless_Reader_1">
+   <property name="text">
+    <string>JAVACOS Virtual Contactless Reader 1</string>
+   </property>
+  </action>
+  <action name="Smart_Card_Reader_USB_0">
+   <property name="text">
+    <string>OMNIKEY Smart Card Reader USB 0</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
