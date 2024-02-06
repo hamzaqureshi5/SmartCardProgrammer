@@ -46,24 +46,6 @@ SmartCardProgrammer - Read, Write and Browse Programmable SIM/USIM/ISIM/HPSIM Ca
   <li>Reading card data</li>
   <li>Writing data to cards</li>
   <li>Managing multiple cards</li>
-  <li>And more...</li>
-</ul>
-
-<p>Refer to the <a href="#">documentation</a> for detailed usage instructions and examples.</p>
-
-<h2>Contributing</h2>
-
-<p>Contributions to the project are welcome! If you'd like to contribute code, report bugs, or suggest new features, please <a href="#">open an issue</a> or <a href="#">submit a pull request</a> on GitHub.</p>
-
-<h2>License</h2>
-
-<p>This project is licensed under the <a href="LICENSE">MIT License</a>, which means you are free to use, modify, and distribute the software as you see fit. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
-
-<h2>Acknowledgements</h2>
-
-<ul>
-  <li>Special thanks to <a href="CONTRIBUTORS.md">contributors</a> who have contributed to the project.</li>
-  <li>This project was inspired by the need for a versatile and user-friendly smart card programmer for ISO 7816 standard.</li>
 </ul>
 
 </body>
